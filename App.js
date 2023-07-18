@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Rotate from './src/rotate';
+import Gyro from './src/gyroscope';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Gyro />
+      <Rotate />
+      <Text>Hello world!!! this works!!!</Text>
+
       <StatusBar style="auto" />
     </View>
   );
